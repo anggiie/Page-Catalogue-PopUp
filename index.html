@@ -1,502 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-general.css">
-    <link rel="stylesheet" href="popup-style.css">
-    <link rel="stylesheet" href="media-queries.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oricamera</title>
+    <meta name="description" content="Oricamera, notre nouvelle boutique en ligne spécialisée dans les appareils photos vintages">
+
+    <link rel="stylesheet" href="src/css/style-general.css">
+    <link rel="stylesheet" href="src/css/styleIndex.css">
+    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
 </head>
 
 <body class="background">
-<!-- Début du header qui est identique sur toutes les pages -->
-<header>
-    <nav>
-        <div class="header">
-          <a href="index.html" class="zoom" id="logo"><img src="logo.png" alt=""></a>
-          <div class="links">
-            <button class="toggle image" id="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button> 
-            <ul>
-                <li class="zoom"><a href="index.html">Accueil</a></li>
-                <li class="zoom"><a href="catalogue.html">Catalogue</a></li>
-                <li class="checkout zoom">
-                    <a href="panier.html">
-                        <i class="fa fa-shopping-cart red"></i>  Votre panier 
-                        <span class="badge badge-red" id="nbrArticles"></span>
+    <!-- Début du header qui est identique sur toutes les pages -->
+    <header>
+        <nav>
+            <div class="header">
+              <a href="index.html" class="zoom" id="logo"><img src="src/img/logo.png" alt=""></a>
+              <div class="links">
+                <button class="toggle image" id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button> 
+                <ul>
+                    <li class="zoom"><a href="index.html">Accueil</a></li>
+                    <li class="zoom"><a href="catalogue.html">Catalogue</a></li>
+                    <li class="checkout zoom">
+                        <a href="panier.html">
+                            <i class="fa fa-shopping-cart red"></i>
+                            <span class="badge badge-red" id="nbrArticles"></span>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>   
+        </nav>
+    </header>
+    <!-- Fin du header -->
+
+    <main >
+            <div class="accueil">
+                <div class="intro__box">
+                    <div class="space__title">
+                        <h1 class="accueil__title">ORICAMERA<br/>Boutique 100% en ligne</h1>
+                    </div>
+                    <div class="accueil__description">
+                        <h2>La plus belle chose que vous pouvez partager, toutes vos émotions en photo. </h2>
+                        <h2>Les plus beaux appareils vintages sont ici, venez découvrir ces merveilles dans notre boutique.</h2>
+                      <q>Lorsque vous vous servez d'un appareil photo, non pas comme d'une machine, <br>mais comme le prolongement de votre cœur, vous ne faites plus qu'un avec votre sujet.</q>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div >
+                <div class="row">
+                    
+                    
+                    
+                </div>
+            </div>    
+    </main>
+
+
+    <footer>
+        <div >
+            <ul class="list-inline footer__div text-center">
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-balance-scale footer__icon"></i>
+                        <p>Mentions légales</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-user-lock footer__icon"></i>
+                        <p>Protection des données</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cogs footer__icon"></i>
+                        <p>CGV</p>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fas fa-cookie footer__icon"></i>
+                        <p>Cookies</p>
                     </a>
                 </li>
             </ul>
-          </div>
-        </div>   
-    </nav>
-</header>
-<!-- Fin du header -->
-
-<!-- début de la partie main qui contiendra les cartes descriptives des appareils -->
-<main class="container-fluid main">
-
-  <section class="row jumbotron productSelect">
-      <div class="col-12 text-center productSelect__box">
-          <h1 class="productSelect__title">Cet article OriCamera vous intéresse ?</h1>
-      </div>
-  </section>
-
-    <a href="index.html" id="return-icon" >
-        <i class="fas fa-arrow-left zoom"></i>
-    </a>
-  
-<div class="container-principal">
-  <div class="container-fluid content-card">
-
-    <div class="card">
-        <div class="menu-card">
-          <div class="content-img">
-            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-          </div>
-          <h2 class="name">Argus</h2>
-          <h3 class="price">499$</h3>
         </div>
-        <div class="btn">
-            <a class="button" href="#popup1">détails</a>
+        <div>
+            <ul class="list-inline footer__div text-center">
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#">
+                        <i class="fab fa-twitter-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-instagram-square footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-facebook footer__icon"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item footer__item zoom">
+                    <a href="#"><i class="fab fa-pinterest footer__icon"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-            
-        <section id="popup1" class="overlay">
-        <div class="popup">
-          <h2>Fiche produit</h2>
-          <a class="close zoom" href="#">
-            <i class="far fa-times-circle"></i>
-          </a>
-          <div class="pop-up-container content-overlay">
-          <div class="pop-up-container-vertical">
-          <div class="pop-up-wrapper">
-                    <div class="product-details">
-                      
-                      <div class="product-top">
-                        <section class="product-info">
-                          <h3 class="product-cam-name">Argus</h3>
-                          <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
-                          <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
-                        </section>
+    </footer>
 
-                        <div class="product-image">
-                          <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                        </div>
-                      </div>
-
-                      <div class="product-middle">
-                        
-                        <p class="product-description">
-                          Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
-                        </p>
-                        
-                        <p class="product-available">
-                          In stock. 
-                          <span class="product-extended">
-                            <a href="#">Buy Extended Warranty</a>
-                          </span>
-                        </p>
-
-                        <div class="product-quantity">
-                          <label for="product-quantity-input" class="product-quantity-label">
-                            Quantity
-                          </label>
-                          <div class="product-quantity-subtract">
-                            <i class="fa fa-chevron-left"></i>
-                          </div>
-                          <div>
-                            <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
-                          </div>
-                          <div class="product-quantity-add">
-                            <i class="fa fa-chevron-right"></i>
-                          </div>
-                        </div>
-
-                      </div>
-
-                      <div class="product-bottom">
-                        <div class="product-checkout">
-                          <p>Total Price</p>
-
-                          <div class="product-checkout-total">
-                            <i class="fa fa-usd"></i>
-
-                            <div class="product-checkout-total-amount">
-                              <span>0.00</span>  
-                            </div>
-
-                          </div>
-                        </div>
-
-                        <div class="product-checkout-actions">
-                          <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                        </div>
-                      </div>
-
-                    </div>
-          </div>
-          </div>
-              
-          </div> 
-        </div>   
-        </section>
-    </div>
-
-    <div class="card">
-      <div class="menu-card">
-        <div class="content-img">
-          <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-        </div>
-        <h2 class="name">Argus</h2>
-        <h3 class="price">499$</h3>
-      </div>
-      <div class="btn">
-          <a class="button" href="#popup2">détails</a>
-      </div>
-          
-      <section id="popup2" class="overlay">
-      <div class="popup">
-        <h2>Fiche produit</h2>
-        <a class="close zoom" href="#">
-          <i class="far fa-times-circle"></i>
-        </a>
-        <div class="pop-up-container content-overlay">
-        <div class="pop-up-container-vertical">
-        <div class="pop-up-wrapper">
-                  <div class="product-details">
-                    
-                    <div class="product-top">
-                      <section class="product-info">
-                        <h3 class="product-cam-name">Argus</h3>
-                        <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
-                        <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
-                      </section>
-
-                      <div class="product-image">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                      </div>
-                    </div>
-
-                    <div class="product-middle">
-                      
-                      <p class="product-description">
-                        Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
-                      </p>
-                      
-                      <p class="product-available">
-                        In stock. 
-                        <span class="product-extended">
-                          <a href="#">Buy Extended Warranty</a>
-                        </span>
-                      </p>
-
-                      <div class="product-quantity">
-                        <label for="product-quantity-input" class="product-quantity-label">
-                          Quantity
-                        </label>
-                        <div class="product-quantity-subtract">
-                          <i class="fa fa-chevron-left"></i>
-                        </div>
-                        <div>
-                          <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
-                        </div>
-                        <div class="product-quantity-add">
-                          <i class="fa fa-chevron-right"></i>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div class="product-bottom">
-                      <div class="product-checkout">
-                        <p>Total Price</p>
-
-                        <div class="product-checkout-total">
-                          <i class="fa fa-usd"></i>
-
-                          <div class="product-checkout-total-amount">
-                            <span>0.00</span>  
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div class="product-checkout-actions">
-                        <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                      </div>
-                    </div>
-
-                  </div>
-        </div>
-        </div>
-            
-        </div> 
-      </div>   
-      </section>
-    </div>
-  </div>
-  <div class="container-fluid content-card">
-
-    <div class="card">
-        <div class="menu-card">
-          <div class="content-img">
-            <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-          </div>
-          <h2 class="name">Argus</h2>
-          <h3 class="price">499$</h3>
-        </div>
-        <div class="btn">
-            <a class="button" href="#popup3">détails</a>
-        </div>
-            
-        <section id="popup3" class="overlay">
-        <div class="popup">
-          <h2>Fiche produit</h2>
-          <a class="close zoom" href="#">
-            <i class="far fa-times-circle"></i>
-          </a>
-          <div class="pop-up-container content-overlay">
-          <div class="pop-up-container-vertical">
-          <div class="pop-up-wrapper">
-                    <div class="product-details">
-                      
-                      <div class="product-top">
-                        <section class="product-info">
-                          <h3 class="product-cam-name">Argus</h3>
-                          <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
-                          <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
-                        </section>
-
-                        <div class="product-image">
-                          <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                        </div>
-                      </div>
-
-                      <div class="product-middle">
-                        
-                        <p class="product-description">
-                          Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
-                        </p>
-                        
-                        <p class="product-available">
-                          In stock. 
-                          <span class="product-extended">
-                            <a href="#">Buy Extended Warranty</a>
-                          </span>
-                        </p>
-
-                        <div class="product-quantity">
-                          <label for="product-quantity-input" class="product-quantity-label">
-                            Quantity
-                          </label>
-                          <div class="product-quantity-subtract">
-                            <i class="fa fa-chevron-left"></i>
-                          </div>
-                          <div>
-                            <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
-                          </div>
-                          <div class="product-quantity-add">
-                            <i class="fa fa-chevron-right"></i>
-                          </div>
-                        </div>
-
-                      </div>
-
-                      <div class="product-bottom">
-                        <div class="product-checkout">
-                          <p>Total Price</p>
-
-                          <div class="product-checkout-total">
-                            <i class="fa fa-usd"></i>
-
-                            <div class="product-checkout-total-amount">
-                              <span>0.00</span>  
-                            </div>
-
-                          </div>
-                        </div>
-
-                        <div class="product-checkout-actions">
-                          <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                        </div>
-                      </div>
-
-                    </div>
-          </div>
-          </div>
-              
-          </div> 
-        </div>   
-        </section>
-    </div>
-
-    <div class="card">
-      <div class="menu-card">
-        <div class="content-img">
-          <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-        </div>
-        <h2 class="name">Argus</h2>
-        <h3 class="price">499$</h3>
-      </div>
-      <div class="btn">
-          <a class="button" href="#popup4">détails</a>
-      </div>
-          
-      <section id="popup4" class="overlay">
-      <div class="popup">
-        <h2>Fiche produit</h2>
-        <a class="close zoom" href="#">
-          <i class="far fa-times-circle"></i>
-        </a>
-        <div class="pop-up-container content-overlay">
-        <div class="pop-up-container-vertical">
-        <div class="pop-up-wrapper">
-                  <div class="product-details">
-                    
-                    <div class="product-top">
-                      <section class="product-info">
-                        <h3 class="product-cam-name">Argus</h3>
-                        <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
-                        <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
-                      </section>
-
-                      <div class="product-image">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2014/05/03/00/42/photography-336608_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                      </div>
-                    </div>
-
-                    <div class="product-middle">
-                      
-                      <p class="product-description">
-                        Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
-                      </p>
-                      
-                      <p class="product-available">
-                        In stock. 
-                        <span class="product-extended">
-                          <a href="#">Buy Extended Warranty</a>
-                        </span>
-                      </p>
-
-                      <div class="product-quantity">
-                        <label for="product-quantity-input" class="product-quantity-label">
-                          Quantity
-                        </label>
-                        <div class="product-quantity-subtract">
-                          <i class="fa fa-chevron-left"></i>
-                        </div>
-                        <div>
-                          <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
-                        </div>
-                        <div class="product-quantity-add">
-                          <i class="fa fa-chevron-right"></i>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div class="product-bottom">
-                      <div class="product-checkout">
-                        <p>Total Price</p>
-
-                        <div class="product-checkout-total">
-                          <i class="fa fa-usd"></i>
-
-                          <div class="product-checkout-total-amount">
-                            <span>0.00</span>  
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div class="product-checkout-actions">
-                        <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                      </div>
-                    </div>
-
-                  </div>
-        </div>
-        </div>
-            
-        </div> 
-      </div>   
-      </section>
-    </div>
-  </div>
-</div>
-</main>  
-<!-- fin du main -->
-
-<!-- début du footer qui est identite à toutes les pages -->
-<footer>
-    <div >
-        <ul class="list-inline footer__div text-center">
-            <li class="list-inline-item footer__item zoom">
-                <a href="#">
-                    <i class="fas fa-balance-scale footer__icon"></i>
-                    <p>Mentions légales</p>
-                </a>
-            </li>
-            <li class="list-inline-item footer__item zoom">
-                <a href="#">
-                    <i class="fas fa-user-lock footer__icon"></i>
-                    <p>Protection des données</p>
-                </a>
-            </li>
-            <li class="list-inline-item footer__item zoom">
-                <a href="#">
-                    <i class="fas fa-cogs footer__icon"></i>
-                    <p>CGV</p>
-                </a>
-            </li>
-            <li class="list-inline-item footer__item zoom">
-                <a href="#">
-                    <i class="fas fa-cookie footer__icon"></i>
-                    <p>Cookies</p>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <ul class="list-inline footer__div text-center">
-            <li class="list-inline-item footer__item zoom">
-                <a href="#">
-                    <i class="fab fa-twitter-square footer__icon"></i>
-                </a>
-            </li>
-            <li class="list-inline-item footer__item zoom">
-                <a href="#"><i class="fab fa-instagram-square footer__icon"></i>
-                </a>
-            </li>
-            <li class="list-inline-item footer__item zoom">
-                <a href="#"><i class="fab fa-facebook footer__icon"></i>
-                </a>
-            </li>
-            <li class="list-inline-item footer__item zoom">
-                <a href="#"><i class="fab fa-pinterest footer__icon"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
-<!-- fin du footer -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<!--        
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
---> 
-<script src="app.js"></script>
-
-
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
 </body>
+
 </html>
