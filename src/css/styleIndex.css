@@ -51,9 +51,12 @@ main .accueil .intro__box .accueil__description :nth-last-child(1) {
   color: #530101;
   margin: 0px auto 55px;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 411px) {
+  main {
+    margin: 40px auto -44px;
+}
   main .accueil .intro__box {
-    padding-top: 10px;
+    padding: 5px auto 40px; 
     margin: -90px auto auto auto;
     height: 100%;
   }
@@ -81,6 +84,41 @@ main .accueil .intro__box .accueil__description :nth-last-child(1) {
     font-size: 16px;
     font-weight: bold;
     color: #530101;
+  }
+}
+@media (min-width: 411px) and (max-width: 414px) {
+  main {
+    margin: 15px auto -10px;
+  }
+  main .accueil .intro__box {
+    padding: 43px 10px 70px;
+    margin: -110px auto -40px auto;
+    height: 100%;
+}
+footer {
+  margin: 0px auto;
+}
+}
+@media (min-width: 414px) and (max-width: 475px) {
+  main {
+    margin: 40px auto -35px;
+}
+  main .accueil .intro__box {
+    padding: 5px 10px 105px;
+    margin: -110px auto 0px auto;
+    height: 100%;
+}
+}
+@media (min-width: 600px) and (max-width: 736px) {
+  main .accueil .intro__box {
+    padding: 110px 10px 140px;
+    margin: -110px auto 0px auto;
+    
+}
+}
+@media (min-width: 1920px) and (max-width: 2440px) {
+  main .accueil {
+    height: 100%;
   }
 }
 /*     fin du main     */
