@@ -9,8 +9,138 @@
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
     <link rel="stylesheet" href="src/css/styleGeneral.css">
-    <link rel="stylesheet" href="src/dist/style.css">
+    <link rel="stylesheet" href=""> 
+<style>
+    .contenaire-confirm {
+    width: 100%;
+    height: 100%;
+    display: wrap;
+    margin: 0px auto;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    background: transparent;
+  }
+  .confirm {
+    text-align: center;
+    margin: 0px auto;
+    background: rgba(255, 250, 250, 0.3);
+    }
+  .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn {
+        font-weight: 700;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirm_btn:hover {
+        font-weight: 700;
+    }
+@media (min-width: 320px) and (max-width: 375px) {
+    .contenaire-confirm {
+        margin: 0px;
+        background-color: transparent;
+    }
+    .contenaire-confirm .confirm {
+        margin: 40px auto 0px;
+        padding: 30px 10px 40px;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        height: 100%;
+        width: 100%;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 25px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title .fa-check {
+        color: #530101;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p {
+        font-size: 1rem;
+        font-weight: 500;  
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref {
+        font-size: 1rem;
+    }
 
+}
+@media (min-width: 375px) and (max-width: 414px) {
+    .contenaire-confirm {
+        margin: 0px;
+        background-color: transparent;
+    }
+    .contenaire-confirm .confirm {
+        margin: 40px auto 0px;
+        padding: 50px 10px 60px;
+    }
+    .contenaire-confirm .confirm .confirm_box {
+        height: 100%;
+        width: 100%;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 25px auto;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title .fa-check {
+        color: #530101;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details p {
+        font-size: 1rem;
+        font-weight: 500;  
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-ref {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 375px) and (max-width: 414px) {
+    .contenaire-confirm {
+        margin: 0px;
+        background-color: transparent;
+    }
+    .contenaire-confirm .confirm {
+        margin: 40px auto 0px;
+        padding: 80px 10px 90px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 25px auto 45px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0px auto 30px;
+    }
+}
+@media (min-width: 414px) and (max-width: 475px) {
+    .contenaire-confirm {
+        margin: 0px;
+        background-color: transparent;
+    }
+    .contenaire-confirm .confirm {
+        margin: 40px auto 0px;
+        padding: 130px 10px 140px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 25px auto 45px;
+    }
+    .contenaire-confirm .confirm .confirm_box .confirm_details .confirmation-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0px auto 30px;
+    }
+}
+</style>
 </head>
 <body class="background">
     <!-- Début du header qui est identique sur toutes les pages -->
@@ -42,15 +172,15 @@
 
     <main class="contenaire-confirm">
         <div class=" jumbotron confirm">
-            <div class="col-12 col-lg-10 text-center confirm__box">
-                <h1 class="confirm__title"><i class="fas fa-check"></i> Merci <span id="name"></span>, nous avons bien reçu votre commande.</h1>
-                <div class="confirm__details">
+            <div class="col-12 col-lg-10 text-center confirm_box">
+                <h1 class="confirm_title"><i class="fas fa-check"></i> Merci <span id="name"></span>, nous avons bien reçu votre commande.</h1>
+                <div class="confirm_details">
                     <p>Un mail vient de vous être adressé. Veuillez vérifier votre messagerie pour obtenir la confirmation de commande et les détails de la livraison. 
                         <br> Si vous n'avez pas reçu le mail merci de bien vérifié vos spam.
                     </p> 
                     <h2 class="confirmation-price" id="prix">Prix total payé</h2>
                     <h2 class="confirmation-ref" id="ref">Référence de la commande</h2>
-                    <button type="button" class="btn btn__confirm confirm__btn" onclick="window.location.href = 'index.html';">Revenir sur notre boutique</button>
+                    <button type="button" class="btn btn_confirm confirm_btn zoom" onclick="window.location.href = 'index.html';">Revenir sur notre boutique</button>
                 </div>
             </div>
         </div>
