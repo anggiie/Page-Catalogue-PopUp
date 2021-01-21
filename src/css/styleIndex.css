@@ -12,7 +12,7 @@ main .accueil {
   background-repeat: no-repeat;
   background-attachment: scroll;
   filter: contrast(70%);
-  height: 120%;
+  /*height: 120%;*/
 }
 main .accueil .intro__box {
     padding: 20px 5px;
