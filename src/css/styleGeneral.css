@@ -13,6 +13,7 @@
   top: 0px;
   left: 0px;
   font-family: 'Playfair Display', serif;
+  color: black;
 }
 body {
     width: 100%;
@@ -21,6 +22,15 @@ body {
     overflow: hidden;
     margin: 20px 0;
     padding: 0;
+}
+button {
+  color: black !important;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+button:hover{
+  color: #530101 !important;
 }
 .zoom {
     transition: transform 0.2s ease;
