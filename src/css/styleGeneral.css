@@ -158,7 +158,7 @@ footer ul li a:hover {
 /*     fin du footer     */
 
 
-@media (min-width: 320px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 768px) {
   header {
     margin: -10px auto;
   }
