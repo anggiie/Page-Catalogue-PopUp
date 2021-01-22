@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     overflow-x: scroll;
+    color: black;
   } 
   /* partie titre et icone précédante */
 
@@ -17,10 +18,10 @@
     margin: 10px auto;
     background: none;
   }
-  .main .productSelect .productSelect__box {
+  .main .productSelect .productSelect_box {
     margin: 30px auto 0px;
   }
-  .main .productSelect .productSelect__box .productSelect__title {
+  .main .productSelect .productSelect_box .productSelect__title {
     font-size: 2.2rem;
     font-weight: 600;
     color: black;
@@ -63,12 +64,12 @@
     margin: 20px auto;
     justify-content: sapce-around;
   }
-  .content-card .card .menu-card {
+  .main .container-principal .content-card .card .menu-card {
     text-decoration: none;
     color: black;
     font-size: 1rem;
   }
-  .content-card .card .menu-card .content-img .container-img {
+  .main .container-principal .content-card .card .menu-card .content-img .container-img {
     width: 100%;
     height: 280px;
     -o-object-fit: cover;
@@ -76,13 +77,13 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
-  .content-card .card .menu-card .name {
+  .main .container-principal .content-card .card .menu-card .name {
     font-size: 1rem;
     font-weight: 800;
     margin-top: 5px;
     padding: 0px 20px;
   }
-  .content-card .card .menu-card .price {
+  .main .container-principal .content-card .card .menu-card .price {
     font-size: 1rem;
     font-weight: 700;
     font-style: italic;
@@ -90,7 +91,7 @@
     padding: 0px 20px;
     margin-top: -5px;
   }
-  .content-card .card .btn {
+  .main .container-principal .content-card .card .btn {
     border: none;
     position: absolute;
     background-color: black;
@@ -102,9 +103,9 @@
     justify-content: center;
     margin: auto;
   }
-  .content-card .card .btn .button {
+  .main .container-principal .content-card .card .btn .button {
     font-size: 1em;
-    color: lightgray;
+    color: snow !important;
     text-decoration: none;
     cursor: pointer;
     display: flex;
@@ -114,10 +115,10 @@
     margin: 0 auto;
     text-align: center;
   }
-  .content-card .card .btn .button:hover {
+  .main .container-principal .content-card .card .btn .button:hover {
     transform: scale(1.1);
   }
-  .content-card .card .btn:hover {
+  .main .container-principal.content-card .card .btn:hover {
     transform: scale(1.1);
   }
   
@@ -356,7 +357,8 @@
       margin: 0px auto 0px 20px
     }
     .main .productSelect .productSelect_box .productSelect_title {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
     .main .container-principal {
       max-width: 310px;
@@ -370,5 +372,9 @@
     }
     .main .container-principal .content-card .card .btn{
       right: -155px;
+    }
+    .main .container-principal .content-card .card .btn .button{
+      color: snow;
+      font: 1rem;
     }
   }

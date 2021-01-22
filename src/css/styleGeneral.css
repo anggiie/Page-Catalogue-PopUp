@@ -13,7 +13,6 @@
   top: 0px;
   left: 0px;
   font-family: 'Playfair Display', serif;
-  color: black;
 }
 body {
     width: 100%;
@@ -38,7 +37,6 @@ button:hover{
 .zoom:hover {
     transform: scale(1.1);
 }
-
 /*     Le header est identique sur toutes les pages     */
 
 /*     début du header  */
