@@ -6,7 +6,7 @@ function OpenProduct(i){
     $(lbi).attr("src", $(i).attr("src"));  
     $(".popup").toggle();
       
-    $("#product-quantity-input, #product-quantity-input6").val("0");
+    $("#product-quantity-input").val("0");
     CalcPrice (0);
     
   }
@@ -24,25 +24,25 @@ function OpenProduct(i){
 
   //Reduce quantity by 1 if clicked
   $(document).on("click", ".product-quantity-subtract", function(e){
-    var value = $("#product-quantity-input, #product-quantity-input6").val();
+    var value = $("#product-quantity-input").val();
     //console.log(value);
     var newValue = parseInt(value) - 1;
     if(newValue < 0) newValue=0;
-    $("#product-quantity-input, #product-quantity-input6 ").val(newValue);
+    $("#product-quantity-input").val(newValue);
     CalcPrice(newValue);
   });
   
   //Increase quantity by 1 if clicked
   $(document).on("click", ".product-quantity-add", function(e){
-    var value = $("#product-quantity-input, #product-quantity-input6 ").val();
+    var value = $("#product-quantity-input ").val();
     //console.log(value);
     var newValue = parseInt(value) + 1;
-    $("#product-quantity-input, #product-quantity-input6").val(newValue);
+    $("#product-quantity-input").val(newValue);
     CalcPrice(newValue);
   });
   
-  $(document).on("blur", "#product-quantity-input, #product-quantity-input6", function(e){
-    var value = $("#product-quantity-input, #product-quantity-input6").val();
+  $(document).on("blur", "#product-quantity-input", function(e){
+    var value = $("#product-quantity-input").val();
     //console.log(value);
     CalcPrice(value);
   });
@@ -50,7 +50,7 @@ function OpenProduct(i){
   
   function AddToCart(e){
     e.preventDefault();
-    var qty = $("#product-quantity-input, #product-quantity-input6").val();
+    var qty = $("#product-quantity-input").val();
     if(qty === '0'){return;}
     var toast = '<div class="toast toast-success">Added '+ qty +' to cart.</div>';  
     $("body").append(toast);

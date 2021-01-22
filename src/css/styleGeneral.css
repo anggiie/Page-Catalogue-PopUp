@@ -42,6 +42,8 @@ button:hover{
 /*     début du header  */
 header {
   margin: 0px auto;
+  position: relative;
+  z-index: 100;
 }
 
 nav {
