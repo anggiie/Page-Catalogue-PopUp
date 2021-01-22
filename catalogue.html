@@ -9,8 +9,6 @@
     
     <link rel="stylesheet" href="src/css/styleGeneral.css">
     <link rel="stylesheet" href="src/css/styleCatalogue.css">
-    <link rel="stylesheet" href="src/css/popup-style.css">
-    <link rel="stylesheet" href="src/css/media-queries.css">
     <title>Document</title>
 </head>
 
@@ -46,8 +44,8 @@
 <main class="container-fluid main">
 
   <section class="row jumbotron productSelect">
-      <div class="col-12 text-center productSelect__box">
-          <h1 class="productSelect__title">Cet article OriCamera vous intéresse ?</h1>
+      <div class="col-12 text-center productSelect_box">
+          <h1 class="productSelect_title">Cet article OriCamera vous intéresse ?</h1>
       </div>
   </section>
 
@@ -55,213 +53,117 @@
         <i class="fas fa-arrow-left zoom"></i>
     </a>
   
-<div class="container-principal">
+  <div class="container-principal">
 
-  <div class="container-fluid content-card">
+    <div class="container-fluid content-card">
 
-    <div class="card">
-        <div class="menu-card">
-          <div class="content-img">
-            <img class="container-img" src="src/img/vcam_1.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+      <div class="card">
+          <div class="menu-card">
+            <div class="content-img">
+              <img class="container-img" src="src/img/vcam_1.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+            </div>
+            <h2 class="name">Zeiss Ikon</h2>
+            <h3 class="price">49,99$</h3>
           </div>
-          <h2 class="name">Zeiss Ikon</h2>
-          <h3 class="price">49,99$</h3>
-        </div>
-        <div class="btn">
-            <a class="button" href="#popup1">détails</a>
-        </div>
-            
-        <section id="popup1" class="overlay">
-        <div class="popup">
-          <h2>Fiche produit</h2>
-          <a class="close zoom" href="#">
-            <i class="far fa-times-circle"></i>
-          </a>
-          <div class="pop-up-container content-overlay">
-          <div class="pop-up-container-vertical">
-          <div class="pop-up-wrapper">
-                    <div class="product-details">
-                      
-                      <div class="product-top">
-                        <section class="product-info">
-                          <h3 class="product-cam-name">Zeiss Ikon</h3>
-                          <p class="product-cam-title">Prontor 300</p>
-                          <p class="product-price" price-data="99.00">$99<span class="product-price-cents">00</span></p>
-                        </section>
-
-                        <div class="product-image">
-                          <img class="container-img" src="src/img/vcam_1.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                        </div>
-                      </div>
-
-                      <div class="product-middle">
-                        
-                        <p class="product-description">
-                          Contina J, 1964 : Prontor 300. Pantar 2.8/45mm. 
-                          Identique au Contina mais sans retardateur.
-                        </p>
-                        
-                        <p class="product-available">
-                          In stock. 
-                          <span class="product-extended">
-                            <a href="#">Buy Extended Warranty</a>
-                          </span>
-                        </p>
-
-                        <div class="product-quantity">
-                          <label for="product-quantity-input" class="product-quantity-label">
-                            Quantity
-                          </label>
-                          <div class="product-quantity-subtract">
-                            <i class="fa fa-chevron-left"></i>
-                          </div>
-                          <div>
-                            <input type="text" id="" class="product-quantity-input" placeholder="0" value="0" />
-                          </div>
-                          <div class="product-quantity-add">
-                            <i class="fa fa-chevron-right"></i>
-                          </div>
-                        </div>
-
-                      </div>
-
-                      <div class="product-bottom">
-                        <div class="product-checkout">
-                          <p>Total Price</p>
-
-                          <div class="product-checkout-total">
-                            <i class="fa fa-usd"></i>
-
-                            <div class="product-checkout-total-amount">
-                              <span>0.00</span>  
-                            </div>
-
-                          </div>
-                        </div>
-
-                        <div class="product-checkout-actions">
-                          <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                        </div>
-                      </div>
-
-                    </div>
-          </div>
+          <div class="btn">
+              <a class="button" href="#popup1">détails</a>
           </div>
               
-          </div> 
-        </div>   
-        </section>
-    </div>
+          <section id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Fiche produit</h2>
+            <a class="close zoom" href="#">
+              <i class="far fa-times-circle"></i>
+            </a>
+            <div class="pop-up-container content-overlay">
+            <div class="pop-up-container-vertical">
+            <div class="pop-up-wrapper">
+                      <div class="product-details">
+                        
+                        <div class="product-top">
+                          <section class="product-info">
+                            <h3 class="product-cam-name">Zeiss Ikon</h3>
+                            <p class="product-cam-title">Prontor 300</p>
+                            <p class="product-price" price-data="99.00">$99<span class="product-price-cents">00</span></p>
+                          </section>
 
-    <div class="card">
-      <div class="menu-card">
-        <div class="content-img">
-          <img class="container-img" src="src/img/vcam_2.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-        </div>
-        <h2 class="name">Argus</h2>
-        <h3 class="price">499$</h3>
-      </div>
-      <div class="btn">
-          <a class="button" href="#popup2">détails</a>
-      </div>
-          
-      <section id="popup2" class="overlay">
-      <div class="popup">
-        <h2>Fiche produit</h2>
-        <a class="close zoom" href="#">
-          <i class="far fa-times-circle"></i>
-        </a>
-        <div class="pop-up-container content-overlay">
-        <div class="pop-up-container-vertical">
-        <div class="pop-up-wrapper">
-                  <div class="product-details">
-                    
-                    <div class="product-top">
-                      <section class="product-info">
-                        <h3 class="product-cam-name">Argus</h3>
-                        <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
-                        <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
-                      </section>
-
-                      <div class="product-image">
-                        <img class="container-img" src="src/img/vcam_2.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                      </div>
-                    </div>
-
-                    <div class="product-middle">
-                      
-                      <p class="product-description">
-                        Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
-                      </p>
-                      
-                      <p class="product-available">
-                        In stock. 
-                        <span class="product-extended">
-                          <a href="#">Buy Extended Warranty</a>
-                        </span>
-                      </p>
-
-                      <div class="product-quantity">
-                        <label for="product-quantity-input" class="product-quantity-label">
-                          Quantity
-                        </label>
-                        <div class="product-quantity-subtract">
-                          <i class="fa fa-chevron-left"></i>
+                          <div class="product-image">
+                            <img class="container-img" src="src/img/vcam_1.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
+                          </div>
                         </div>
-                        <div>
-                          <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
-                        </div>
-                        <div class="product-quantity-add">
-                          <i class="fa fa-chevron-right"></i>
-                        </div>
-                      </div>
 
-                    </div>
+                        <div class="product-middle">
+                          
+                          <p class="product-description">
+                            Contina J, 1964 : Prontor 300. Pantar 2.8/45mm. 
+                            Identique au Contina mais sans retardateur.
+                          </p>
+                          
+                          <p class="product-available">
+                            In stock. 
+                            <span class="product-extended">
+                              <a href="#">Buy Extended Warranty</a>
+                            </span>
+                          </p>
 
-                    <div class="product-bottom">
-                      <div class="product-checkout">
-                        <p>Total Price</p>
-
-                        <div class="product-checkout-total">
-                          <i class="fa fa-usd"></i>
-
-                          <div class="product-checkout-total-amount">
-                            <span>0.00</span>  
+                          <div class="product-quantity">
+                            <label for="product-quantity-input" class="product-quantity-label">
+                              Quantity
+                            </label>
+                            <div class="product-quantity-subtract">
+                              <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <div>
+                              <input type="text" id="" class="product-quantity-input" placeholder="0" value="0" />
+                            </div>
+                            <div class="product-quantity-add">
+                              <i class="fa fa-chevron-right"></i>
+                            </div>
                           </div>
 
                         </div>
+
+                        <div class="product-bottom">
+                          <div class="product-checkout">
+                            <p>Total Price</p>
+
+                            <div class="product-checkout-total">
+                              <i class="fa fa-usd"></i>
+
+                              <div class="product-checkout-total-amount">
+                                <span>0.00</span>  
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="product-checkout-actions">
+                            <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
+                          </div>
+                        </div>
+
                       </div>
+            </div>
+            </div>
+                
+            </div> 
+          </div>   
+          </section>
+      </div>
 
-                      <div class="product-checkout-actions">
-                        <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                      </div>
-                    </div>
-
-                  </div>
-        </div>
-        </div>
-            
-        </div> 
-      </div>   
-      </section>
-    </div>
-  </div>
-
-  <div class="container-fluid content-card">
-
-    <div class="card">
+      <div class="card">
         <div class="menu-card">
           <div class="content-img">
-            <img class="container-img" src="src/img/vcam_3.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+            <img class="container-img" src="src/img/vcam_2.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
           </div>
           <h2 class="name">Argus</h2>
           <h3 class="price">499$</h3>
         </div>
         <div class="btn">
-            <a class="button" href="#popup3">détails</a>
+            <a class="button" href="#popup2">détails</a>
         </div>
             
-        <section id="popup3" class="overlay">
+        <section id="popup2" class="overlay">
         <div class="popup">
           <h2>Fiche produit</h2>
           <a class="close zoom" href="#">
@@ -280,7 +182,7 @@
                         </section>
 
                         <div class="product-image">
-                          <img class="container-img" src="src/img/vcam_3.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
+                          <img class="container-img" src="src/img/vcam_2.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
                         </div>
                       </div>
 
@@ -340,117 +242,117 @@
           </div> 
         </div>   
         </section>
+      </div>
     </div>
 
-    <div class="card">
-      <div class="menu-card">
-        <div class="content-img">
-          <img class="container-img" src="src/img/vcam_4.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-        </div>
-        <h2 class="name">Argus</h2>
-        <h3 class="price">499$</h3>
-      </div>
-      <div class="btn">
-          <a class="button" href="#popup4">détails</a>
-      </div>
-          
-      <section id="popup4" class="overlay">
-      <div class="popup">
-        <h2>Fiche produit</h2>
-        <a class="close zoom" href="#">
-          <i class="far fa-times-circle"></i>
-        </a>
-        <div class="pop-up-container content-overlay">
-        <div class="pop-up-container-vertical">
-        <div class="pop-up-wrapper">
-                  <div class="product-details">
-                    
-                    <div class="product-top">
-                      <section class="product-info">
-                        <h3 class="product-cam-name">Argus</h3>
-                        <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
-                        <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
-                      </section>
+    <div class="container-fluid content-card">
 
-                      <div class="product-image">
-                        <img class="container-img" src="src/img/vcam_4.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                      </div>
-                    </div>
+      <div class="card">
+          <div class="menu-card">
+            <div class="content-img">
+              <img class="container-img" src="src/img/vcam_3.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+            </div>
+            <h2 class="name">Argus</h2>
+            <h3 class="price">499$</h3>
+          </div>
+          <div class="btn">
+              <a class="button" href="#popup3">détails</a>
+          </div>
+              
+          <section id="popup3" class="overlay">
+          <div class="popup">
+            <h2>Fiche produit</h2>
+            <a class="close zoom" href="#">
+              <i class="far fa-times-circle"></i>
+            </a>
+            <div class="pop-up-container content-overlay">
+            <div class="pop-up-container-vertical">
+            <div class="pop-up-wrapper">
+                      <div class="product-details">
+                        
+                        <div class="product-top">
+                          <section class="product-info">
+                            <h3 class="product-cam-name">Argus</h3>
+                            <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
+                            <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
+                          </section>
 
-                    <div class="product-middle">
-                      
-                      <p class="product-description">
-                        Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
-                      </p>
-                      
-                      <p class="product-available">
-                        In stock. 
-                        <span class="product-extended">
-                          <a href="#">Buy Extended Warranty</a>
-                        </span>
-                      </p>
-
-                      <div class="product-quantity">
-                        <label for="product-quantity-input" class="product-quantity-label">
-                          Quantity
-                        </label>
-                        <div class="product-quantity-subtract">
-                          <i class="fa fa-chevron-left"></i>
+                          <div class="product-image">
+                            <img class="container-img" src="src/img/vcam_3.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
+                          </div>
                         </div>
-                        <div>
-                          <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
-                        </div>
-                        <div class="product-quantity-add">
-                          <i class="fa fa-chevron-right"></i>
-                        </div>
-                      </div>
 
-                    </div>
+                        <div class="product-middle">
+                          
+                          <p class="product-description">
+                            Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
+                          </p>
+                          
+                          <p class="product-available">
+                            In stock. 
+                            <span class="product-extended">
+                              <a href="#">Buy Extended Warranty</a>
+                            </span>
+                          </p>
 
-                    <div class="product-bottom">
-                      <div class="product-checkout">
-                        <p>Total Price</p>
-
-                        <div class="product-checkout-total">
-                          <i class="fa fa-usd"></i>
-
-                          <div class="product-checkout-total-amount">
-                            <span>0.00</span>  
+                          <div class="product-quantity">
+                            <label for="product-quantity-input" class="product-quantity-label">
+                              Quantity
+                            </label>
+                            <div class="product-quantity-subtract">
+                              <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <div>
+                              <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
+                            </div>
+                            <div class="product-quantity-add">
+                              <i class="fa fa-chevron-right"></i>
+                            </div>
                           </div>
 
                         </div>
+
+                        <div class="product-bottom">
+                          <div class="product-checkout">
+                            <p>Total Price</p>
+
+                            <div class="product-checkout-total">
+                              <i class="fa fa-usd"></i>
+
+                              <div class="product-checkout-total-amount">
+                                <span>0.00</span>  
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="product-checkout-actions">
+                            <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
+                          </div>
+                        </div>
+
                       </div>
+            </div>
+            </div>
+                
+            </div> 
+          </div>   
+          </section>
+      </div>
 
-                      <div class="product-checkout-actions">
-                        <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                      </div>
-                    </div>
-
-                  </div>
-        </div>
-        </div>
-            
-        </div> 
-      </div>   
-      </section>
-    </div>
-  </div>
-
-  <div class="container-fluid content-card">
-
-    <div class="card">
+      <div class="card">
         <div class="menu-card">
           <div class="content-img">
-            <img class="container-img" src="src/img/vcam_5.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+            <img class="container-img" src="src/img/vcam_4.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
           </div>
           <h2 class="name">Argus</h2>
           <h3 class="price">499$</h3>
         </div>
         <div class="btn">
-            <a class="button" href="#popup3">détails</a>
+            <a class="button" href="#popup4">détails</a>
         </div>
             
-        <section id="popup3" class="overlay">
+        <section id="popup4" class="overlay">
         <div class="popup">
           <h2>Fiche produit</h2>
           <a class="close zoom" href="#">
@@ -469,7 +371,7 @@
                         </section>
 
                         <div class="product-image">
-                          <img class="container-img" src="src/img/vcam_5.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
+                          <img class="container-img" src="src/img/vcam_4.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
                         </div>
                       </div>
 
@@ -529,102 +431,198 @@
           </div> 
         </div>   
         </section>
+      </div>
     </div>
 
-    <div class="card">
-      <div class="menu-card">
-        <div class="content-img">
-          <img class="container-img" src="https://cdn.pixabay.com/photo/2018/01/28/21/14/lens-3114729_960_720.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
-        </div>
-        <h2 class="name">F.E.D</h2>
-        <h3 class="price">100$</h3>
-      </div>
-      <div class="btn">
-          <a class="button" href="#popup6">détails</a>
-      </div>
-          
-      <section id="popup6" class="overlay">
-      <div class="popup">
-        <h2>Fiche produit</h2>
-        <a class="close zoom" href="#">
-          <i class="far fa-times-circle"></i>
-        </a>
-        <div class="pop-up-container content-overlay">
-        <div class="pop-up-container-vertical">
-        <div class="pop-up-wrapper">
-                  <div class="product-details">
-                    
-                    <div class="product-top">
-                      <section class="product-info">
-                        <h3 class="product-cam-name">F.E.D</h3>
-                        <p class="product-cam-title">FED 3 5B compact</p>
-                        <p class="product-price" price-data="00.00">$100<span class="product-price-cents">00</span></p>
-                      </section>
+    <div class="container-fluid content-card">
 
-                      <div class="product-image">
-                        <img class="container-img" src="https://cdn.pixabay.com/photo/2018/01/28/21/14/lens-3114729_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
-                      </div>
-                    </div>
+      <div class="card">
+          <div class="menu-card">
+            <div class="content-img">
+              <img class="container-img" src="src/img/vcam_5.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+            </div>
+            <h2 class="name">Argus</h2>
+            <h3 class="price">499$</h3>
+          </div>
+          <div class="btn">
+              <a class="button" href="#popup3">détails</a>
+          </div>
+              
+          <section id="popup3" class="overlay">
+          <div class="popup">
+            <h2>Fiche produit</h2>
+            <a class="close zoom" href="#">
+              <i class="far fa-times-circle"></i>
+            </a>
+            <div class="pop-up-container content-overlay">
+            <div class="pop-up-container-vertical">
+            <div class="pop-up-wrapper">
+                      <div class="product-details">
+                        
+                        <div class="product-top">
+                          <section class="product-info">
+                            <h3 class="product-cam-name">Argus</h3>
+                            <p class="product-cam-title"> Argus C3 Black Brick Camera</p>
+                            <p class="product-price" price-data="499.00">$499<span class="product-price-cents">00</span></p>
+                          </section>
 
-                    <div class="product-middle">
-                      
-                      <p class="product-description">
-                        FED 3 5B compact 24X36 télémétrique Russe 24X36 télémétrique Russe, format : 35 mm, Année de fabrication : 1970, 
-                      </p>
-                      
-                      <p class="product-solded">
-                        Solded!
-                        <span class="product-extended">
-                          <a href="#">Buy Extended Warranty</a>
-                        </span>
-                      </p>
-
-                      <div class="product-quantity">
-                        <label for="product-quantity-input" class="product-quantity-label">
-                          Quantity
-                        </label>
-                        <div class="product-quantity-subtract">
-                          <i class="fa fa-chevron-left"></i>
+                          <div class="product-image">
+                            <img class="container-img" src="src/img/vcam_5.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
+                          </div>
                         </div>
-                        <div>
-                          <input type="text" id="product-quantity-input6" class="product-quantity-input" placeholder="0" value="0" />
-                        </div>
-                        <div class="product-quantity-add">
-                          <i class="fa fa-chevron-right"></i>
-                        </div>
-                      </div>
 
-                    </div>
+                        <div class="product-middle">
+                          
+                          <p class="product-description">
+                            Ces caméras sont absolument incroyables. Ils font un grand affichage ou seraient un grand ajout à votre collection d’appareil-photo.
+                          </p>
+                          
+                          <p class="product-available">
+                            In stock. 
+                            <span class="product-extended">
+                              <a href="#">Buy Extended Warranty</a>
+                            </span>
+                          </p>
 
-                    <div class="product-bottom">
-                      <div class="product-checkout">
-                        <p>Total Price</p>
-
-                        <div class="product-checkout-total">
-                          <i class="fa fa-usd"></i>
-
-                          <div class="product-checkout-total-amount">
-                            <span>0.00</span>  
+                          <div class="product-quantity">
+                            <label for="product-quantity-input" class="product-quantity-label">
+                              Quantity
+                            </label>
+                            <div class="product-quantity-subtract">
+                              <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <div>
+                              <input type="text" id="product-quantity-input" class="product-quantity-input" placeholder="0" value="0" />
+                            </div>
+                            <div class="product-quantity-add">
+                              <i class="fa fa-chevron-right"></i>
+                            </div>
                           </div>
 
                         </div>
-                      </div>
 
-                      <div class="product-checkout-actions">
-                        <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
-                      </div>
-                    </div>
+                        <div class="product-bottom">
+                          <div class="product-checkout">
+                            <p>Total Price</p>
 
-                  </div>
+                            <div class="product-checkout-total">
+                              <i class="fa fa-usd"></i>
+
+                              <div class="product-checkout-total-amount">
+                                <span>0.00</span>  
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <div class="product-checkout-actions">
+                            <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
+                          </div>
+                        </div>
+
+                      </div>
+            </div>
+            </div>
+                
+            </div> 
+          </div>   
+          </section>
+      </div>
+
+      <div class="card">
+        <div class="menu-card">
+          <div class="content-img">
+            <img class="container-img" src="https://cdn.pixabay.com/photo/2018/01/28/21/14/lens-3114729_960_720.jpg" width="960" height="720" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue"/>
+          </div>
+          <h2 class="name">F.E.D</h2>
+          <h3 class="price">100$</h3>
         </div>
+        <div class="btn">
+            <a class="button" href="#popup6">détails</a>
         </div>
             
-        </div> 
-      </div>   
-      </section>
+        <section id="popup6" class="overlay">
+        <div class="popup">
+          <h2>Fiche produit</h2>
+          <a class="close zoom" href="#">
+            <i class="far fa-times-circle"></i>
+          </a>
+          <div class="pop-up-container content-overlay">
+          <div class="pop-up-container-vertical">
+          <div class="pop-up-wrapper">
+                    <div class="product-details">
+                      
+                      <div class="product-top">
+                        <section class="product-info">
+                          <h3 class="product-cam-name">F.E.D</h3>
+                          <p class="product-cam-title">FED 3 5B compact</p>
+                          <p class="product-price" price-data="00.00">$100<span class="product-price-cents">00</span></p>
+                        </section>
+
+                        <div class="product-image">
+                          <img class="container-img" src="https://cdn.pixabay.com/photo/2018/01/28/21/14/lens-3114729_960_720.jpg" alt="image de notre Nikon xx377 actuellement disponible dans notre catalogue" height="300" width="500"/>
+                        </div>
+                      </div>
+
+                      <div class="product-middle">
+                        
+                        <p class="product-description">
+                          FED 3 5B compact 24X36 télémétrique Russe 24X36 télémétrique Russe, format : 35 mm, Année de fabrication : 1970, 
+                        </p>
+                        
+                        <p class="product-solded">
+                          Solded!
+                          <span class="product-extended">
+                            <a href="#">Buy Extended Warranty</a>
+                          </span>
+                        </p>
+
+                        <div class="product-quantity">
+                          <label for="product-quantity-input" class="product-quantity-label">
+                            Quantity
+                          </label>
+                          <div class="product-quantity-subtract">
+                            <i class="fa fa-chevron-left"></i>
+                          </div>
+                          <div>
+                            <input type="text" id="product-quantity-input6" class="product-quantity-input" placeholder="0" value="0" />
+                          </div>
+                          <div class="product-quantity-add">
+                            <i class="fa fa-chevron-right"></i>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="product-bottom">
+                        <div class="product-checkout">
+                          <p>Total Price</p>
+
+                          <div class="product-checkout-total">
+                            <i class="fa fa-usd"></i>
+
+                            <div class="product-checkout-total-amount">
+                              <span>0.00</span>  
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="product-checkout-actions">
+                          <a class="add-to-cart" href="#" onclick="AddToCart(event);">Add to Cart</a>
+                        </div>
+                      </div>
+
+                    </div>
+          </div>
+          </div>
+              
+          </div> 
+        </div>   
+        </section>
+      </div>
     </div>
   </div>
-</div>
 </main>  
 <!-- fin du main -->
 
